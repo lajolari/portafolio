@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de Mi{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+            <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+            <h2 class="section-heading">Leonardo Lama</h2>   
+            <p>Ingeniero de Computacion egresado de la Universidad Jose Antonio Paez. Programador Python - Django.</p>
+            <p>He trabajado desde el 2017 en diversos proyectos que abarcan desde ensamblaje de sitios web con Wordpress, hasta desarrollos con PHP 5.6, 7.1, Laravel, Python 2.7 y 3.5 y Django</p>            
+        </div>
+    </div>
+{% endblock %}
